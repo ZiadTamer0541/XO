@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box
+}
+.game{
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+}
+@media(max-width:767px){
+    .game{
+        width: 350px;
+    }
+}
+.title{
+    background-color: crimson;
+    padding: 20px;
+}
+.title span{
+    color: gold;
+    margin-right: 10px;
+}
+.squares{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.squares div{
+    background-color: crimson;
+    width: 100%;
+    height: 120px;
+    padding: 30px;
+    cursor: pointer;
+}
+.squares div:hover{
+    background-color: black;
+}
